@@ -94,3 +94,25 @@ body {
 div {
     font-family: 'Century Gothic';
 }
+
+    .poster-cell {
+        position: relative;
+    }
+
+.poster {
+    display: none;
+    position: absolute;
+    top: 50%; 
+    transform: translateY(-50%);
+    left: 0;
+    width: 175px;
+    max-width: 500px; 
+    z-index: 1; 
+}
+
+    .Clicky:hover .poster {
+        display: block;
+    }
+    .Preview {
+        width: 100px;
+    }
