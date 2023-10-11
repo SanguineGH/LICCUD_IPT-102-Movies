@@ -7,15 +7,34 @@
     <title>Movie</title>
 </head>
 <body>
-    <h2>Movie Details</h2>
-    <p>Movie ID: @Model.Id</p>
-    <p>Movie Name: @Model.Name</p>
-    <p>Rating: @Model.Rating</p>
-    <p>Release Year: @Model.ReleaseYear</p>
-    <p>Genre: @Model.Genre</p>
-    <p> Trailer </p>
-    <video width="1280" height="720" controls>
+    <h2 class="CenterDetails">Movie Details</h2>
+    <br />
+    <div class="MovieFlex">
+        <div class="POSTER1"><img class="ImagePost" src="@Model.Poster" alt="@Model.Name"></div>
+        <div class="POSTER2">
+            <br />
+            <p class="MovieName">Movie Name: @Model.Name</p>
+            <p class="MovieID">Movie ID: @Model.Id</p>
+            <p class="MovieRating">Rating: @Model.Rating</p>
+            <p class="MovieYear">Release Year: @Model.ReleaseYear</p>
+            <p class="MovieGenre">Genre: @Model.Genre</p>
+            <br />
+            <br />
+            <div class="Description">
+                <p class="MovieSynopsis">Synopsis</p>
+                <p class="MovieDescription">@Model.Desc</p>
+            </div>
+        </div>
+    </div>
+    <br />
+    <div class="TrailerVid">
+        <p class="MovieTrailer"> Trailer </p>
+    <video width="1080" height="520" controls>
     <source src="@Model.Trailer" type="video/mp4">
-</video>
+    </video>
+    </div>
+    <br />
+    
+
 </body>
 </html>

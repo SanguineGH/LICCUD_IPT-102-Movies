@@ -18,5 +18,79 @@ html {
 }
 
 body {
-  margin-bottom: 60px;
+    margin-bottom: 60px;
+    
+}
+
+.Clicky {
+    cursor: pointer;
+}
+
+.table tbody tr {
+    height: 35px;
+}
+
+.table thead tr {
+    height: 50px;
+}
+
+.ImagePost {
+    width: 90%;
+    border-radius: 10%;
+}
+
+.MovieFlex {
+    display: flex;
+}
+
+.POSTER1 {
+  width: 30%;
+  text-align: left;
+}
+
+.POSTER2 {
+  padding-left: 20px;
+  width: 70%;
+  text-align: left;
+}
+
+.MovieID {
+    font-size: 30px;
+    font-weight: bold;
+}
+.MovieName {
+    font-size: 40px;
+    font-weight: bold;
+}
+.MovieRating {
+    font-size: 20px;
+}
+.MovieYear {
+    font-size: 20px;
+}
+.MovieGenre {
+    font-size: 20px;
+
+}
+.MovieSynopsis {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.MovieDescription {
+    font-size: 15px;
+}
+
+.CenterDetails {
+    text-align: center;
+}
+
+.TrailerVid {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+div {
+    font-family: 'Century Gothic';
 }

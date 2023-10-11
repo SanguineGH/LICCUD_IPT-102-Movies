@@ -4,10 +4,11 @@
     ViewData["Title"] = "Home Page";
 }
 
-
-<table>
+<br />
+<br />
+<table class="table table-hover">
     <thead>
-        <tr>
+        <tr class="table-active">
             <th>ID</th>
             <th>Name</th>
             <th>Rating</th>
@@ -18,9 +19,9 @@
     <tbody>
         @foreach (var movie in Model)
         {
-            <tr>
+            <tr class="Clicky" onclick="window.location='/movies/getmovie/@movie.Id';">
                 <td>@movie.Id</td>
-                <td ><a href = "/movies/getmovie/@movie.Id" > @movie.Name </a></td>
+                <td>@movie.Name</td>
                 <td>@movie.Rating</td>
                 <td>@movie.ReleaseYear</td>
                 <td>@movie.Genre</td>
@@ -28,4 +29,5 @@
         }
     </tbody>
 </table>
+
 
