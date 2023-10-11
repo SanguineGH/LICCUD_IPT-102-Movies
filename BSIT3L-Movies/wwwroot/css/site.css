@@ -104,7 +104,7 @@ div {
     position: absolute;
     top: 50%; 
     transform: translateY(-50%);
-    left: 0;
+    right: 50%;
     width: 175px;
     max-width: 500px; 
     z-index: 1; 
