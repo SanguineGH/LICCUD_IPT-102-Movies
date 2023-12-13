@@ -12,7 +12,8 @@
     <header>
         <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
             <div class="container-fluid">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">BSIT3L Movies By Jesse James B. Liccud</a>
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Welcome!, @ViewBag.UserName</a>
+                <a asp-controller="Login" asp-action="Logout">Logout</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>

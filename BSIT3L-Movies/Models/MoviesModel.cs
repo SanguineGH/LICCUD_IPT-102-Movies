@@ -16,6 +16,7 @@ namespace BSIT3L_Movies.Models
 
 		public string Poster { get; set; }
 
-	}
+        public string Comments { get; set; }
+    }
 }
 

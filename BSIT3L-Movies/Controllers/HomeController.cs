@@ -33,12 +33,22 @@ public class HomeController : Controller
         };
 	}
 
-	public IActionResult Index()
-	{
-		return View(_movies);
-	}
+    public IActionResult Index()
+    {
+        // Retrieve the email and name from TempData
+        var userEmail = Request.Cookies["UserEmail"];
+        var userName = Request.Cookies["UserName"];
+        var sessionKey = Request.Cookies["UserEmail"];
 
-	public IActionResult Privacy()
+        // Pass the email and name to the Index view
+        ViewBag.UserEmail = userEmail;
+        ViewBag.UserName = userName;
+        ViewBag.SessionKey = sessionKey;
+
+        return View(_movies);
+    }
+
+    public IActionResult Privacy()
 	{
 		return View();
 	}

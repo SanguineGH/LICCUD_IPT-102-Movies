@@ -18,6 +18,8 @@
             <p class="MovieRating">Rating: @Model.Rating</p>
             <p class="MovieYear">Release Year: @Model.ReleaseYear</p>
             <p class="MovieGenre">Genre: @Model.Genre</p>
+            <button class="UpvoteButton">Upvote</button>
+            <button class="DownvoteButton">Downvote</button>
             <br />
             <br />
             <div class="Description">
@@ -34,7 +36,26 @@
     </video>
     </div>
     <br />
-    
+    <div class="CommentSection">
+        <h3>Comments</h3>
+        <!-- Loop through comments in Model and display them -->
+            <div class="Comment">
+                <p>User Name here </p>
+               <p>CommentText here </p>
+                <!-- Add upvote and downvote buttons -->
+         
+            </div>
+ 
+
+        <!-- Comment Input Form -->
+        <form>
+            <label for="comment">Add a comment:</label>
+            <textarea id="comment" name="comment" rows="4" cols="50"></textarea>
+            <br />
+            <button type="submit">Add Comment</button>
+        </form>
+    </div>
+
 
 </body>
 </html>
